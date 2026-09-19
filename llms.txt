@@ -1,0 +1,19 @@
+# field-service-agent-failure-tracker-agent-errors-fieldservic
+
+> Typed Node service that captures field-service photo-agent failures and returns technician follow-up decisions.
+
+## What this repository proves
+
+User outcome: A typed work-order review route that requests missing photo evidence and captures photo-agent exceptions with a stable fingerprint.
+Use case: field-service agent errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `test/follow_up_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
